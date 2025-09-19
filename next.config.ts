@@ -13,6 +13,16 @@ const nextConfig: NextConfig = {
           }
         ],
         destination: "/:lang/de/:path*"
+      },
+      {
+        source: "/:lang/:path*",
+        has: [
+          {
+            type: "host",
+            value: "fr.mrosati.it"
+          }
+        ],
+        destination: "/:lang/fr/:path*"
       }
     ];
   }
